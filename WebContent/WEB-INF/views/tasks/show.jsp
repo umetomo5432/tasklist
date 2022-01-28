@@ -6,11 +6,11 @@
 
         <h2>id : ${task.id} のタスク詳細ページ</h2>
 
-        <p>メッセージ：<c:out value="${task.content}" /></p>
-        <p>作成日時：<fmt:formatDate value="${task.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
-        <p>更新日時：<fmt:formatDate value="${task.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
+        <p>メッセージ：<c:out value="${tasks.content}" /></p>
+        <p>作成日時：<fmt:formatDate value="${tasks.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
+        <p>更新日時：<fmt:formatDate value="${tasks.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
 
         <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
-
+        <p><a href="${pageContext.request.contextPath}/edit?id=${tasks.id}">このメッセージを編集する</a></p>
     </c:param>
 </c:import>
